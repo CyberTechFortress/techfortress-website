@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta charset="utf-8">
+<title>Management Solutions — Tech Fortress</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:oklch(0.1 0.006 25) radial-gradient(oklch(0.3 0.02 25 / 0.5) 1px, transparent 1px) 0 0/24px 24px;font-family:'Inter',sans-serif;color:oklch(0.55 0.02 250);}
+  a{color:oklch(0.58 0.22 25);text-decoration:none;}
+  a:hover{color:oklch(0.68 0.22 25);}
+
+  .nav-item{position:relative;padding-bottom:16px;margin-bottom:-16px}
+  .nav-item .dropdown{display:none;position:absolute;top:100%;left:0;margin-top:0;background:oklch(0.99 0.002 250);border:1px solid oklch(0.9 0.005 250);border-radius:12px;padding:8px;width:300px;grid-template-columns:1fr 1fr;gap:4px;box-shadow:0 22px 44px rgba(0,0,0,.45);z-index:70}
+  .nav-item:hover .dropdown{display:grid}
+  .dropdown a{display:flex;align-items:center;gap:7px;padding:7px 8px;border-radius:7px;color:oklch(0.32 0.01 250);font-size:11.5px;font-weight:600;line-height:1.25;text-decoration:none}
+  .dropdown a:hover{background:oklch(0.95 0.01 250)}
+  .dropdown a .ic{width:16px;height:16px;border-radius:4px;background:oklch(0.5 0.19 25);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+  .dropdown a .ic i{width:6px;height:3px;border-left:1.5px solid white;border-bottom:1.5px solid white;transform:rotate(-45deg) translate(0.5px,-0.5px);display:block}
+
+  .dropdown-l1{display:none;position:absolute;top:100%;left:0;margin-top:0;background:oklch(0.99 0.002 250);border:1px solid oklch(0.9 0.005 250);border-radius:10px;padding:6px;width:210px;box-shadow:0 22px 44px rgba(0,0,0,.45);z-index:70}
+  .nav-item:hover .dropdown-l1{display:block}
+  .l1-row{position:relative;padding-right:8px;margin-right:-8px}
+  .l1-row>a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:7px;color:oklch(0.28 0.01 250);font-size:13px;font-weight:600;text-decoration:none}
+  .l1-row>a:hover{background:oklch(0.95 0.01 250)}
+  .flyout{display:none;position:absolute;top:0;left:100%;margin-left:0;background:oklch(0.99 0.002 250);border:1px solid oklch(0.9 0.005 250);border-radius:10px;padding:8px;width:250px;box-shadow:0 22px 44px rgba(0,0,0,.45)}
+  .l1-row:hover .flyout{display:block}
+  .flyout a{display:block;padding:8px 12px;border-radius:7px;color:oklch(0.32 0.01 250);font-size:12.5px;font-weight:600;text-decoration:none;line-height:1.3}
+  .flyout a:hover{background:oklch(0.95 0.01 250)}
+  image-slot{min-width:0;max-width:100%}
+  [style*="grid-template-columns"]>*{min-width:0}
+  @media(max-width:860px){
+    [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+    nav{gap:12px !important;justify-content:center}
+    [style*="max-width:1280px"]{padding-left:20px !important;padding-right:20px !important}
+    .dropdown,.dropdown-l1{position:static !important;width:auto !important;margin-top:8px !important}
+    .flyout{position:static !important;width:auto !important;margin-left:0 !important}
+  }
+</style>
+</helmet>
+
+<div style="position:sticky;top:0;z-index:50;background:oklch(0.16 0.02 250 / 0.9);backdrop-filter:blur(14px);border-bottom:1px solid oklch(0.28 0.02 25 / 0.6)">
+  <div style="max-width:1280px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <a href="./Home.dc.html" style="display:flex;align-items:center;gap:10px">
+      <img src="assets/logo.png" alt="Tech Fortress" style="height:38px;width:auto"/>
+    </a>
+    <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
+      <a href="./Home.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">Home</a>
+      <div class="nav-item" style="display:flex;align-items:center">
+        <a href="./Security.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">Security ▾</a>
+        <div class="dropdown-l1">
+          <div class="l1-row">
+            <a href="./EndpointSecurity.dc.html">Endpoint Security <span>▸</span></a>
+            <div class="flyout">
+              <a href="./AdvancedEmailSecurity.dc.html">Advanced Email Security</a>
+              <a href="./EDR.dc.html">Endpoint Detection & Response (EDR)</a>
+              <a href="./MDR.dc.html">Managed Detection & Response (MDR)</a>
+              <a href="./RansomwareProtection.dc.html">Ransomware Protection</a>
+            </div>
+          </div>
+          <div class="l1-row">
+            <a href="./DataManagement.dc.html">Data Management <span>▸</span></a>
+            <div class="flyout">
+              <a href="./BackupRecovery.dc.html">Backup and Recovery</a>
+              <a href="./DataLossPrevention.dc.html">Advanced Data Loss Prevention (DLP)</a>
+              <a href="./EndpointManagement.dc.html">Endpoint Management</a>
+              <a href="./DisasterRecovery.dc.html">Disaster Recovery</a>
+              <a href="./FileSyncShare.dc.html">Advanced File Sync and Share</a>
+              <a href="./AdvancedAutomation.dc.html">Advanced Automation</a>
+              <a href="./Microsoft365.dc.html">Microsoft 365 Collaboration</a>
+            </div>
+          </div>
+          <div class="l1-row">
+            <a href="./NetworkSecurity.dc.html">Network Security</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item" style="display:flex;align-items:center">
+        <a href="./Management.dc.html" style="color:oklch(0.58 0.22 25);font-weight:600;font-size:14px;border-bottom:2px solid oklch(0.58 0.22 25);padding-bottom:4px">Management ▾</a>
+        <div class="dropdown">
+          <a href="./Management.dc.html#ops"><span class="ic"><i></i></span>Security Ops</a>
+          <a href="./NetSupportManager.dc.html"><span class="ic"><i></i></span>Net Support Manager</a>
+          <a href="./NetSupportDNA.dc.html"><span class="ic"><i></i></span>Net Support DNA</a>
+          <a href="./NetSupportNotify.dc.html"><span class="ic"><i></i></span>NetSupport Notify</a>
+          <a href="./NetSupportSchool.dc.html"><span class="ic"><i></i></span>Net Support School</a>
+          <a href="./ClassroomManagement.dc.html"><span class="ic"><i></i></span>Classroom Management</a>
+          <a href="./Connect247.dc.html"><span class="ic"><i></i></span>247Connect</a>
+        </div>
+      </div>
+      <div class="nav-item" style="display:flex;align-items:center">
+        <a href="./Support.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">Support ▾</a>
+        <div class="dropdown">
+          <a href="./Support.dc.html#it-managed-service"><span class="ic"><i></i></span>IT Managed Service</a>
+          <a href="./Support.dc.html#infrastructure"><span class="ic"><i></i></span>IT Infrastructure & Hardware</a>
+        </div>
+      </div>
+      <a href="./CustomerSuccess.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">CSaaS</a>
+      <a href="./About.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">About Us</a>
+    </nav>
+    <a href="./Contact.dc.html" style="background:oklch(0.32 0.15 25);color:oklch(0.98 0.005 40);border:1px solid oklch(0.58 0.22 25 / 0.7);box-shadow:0 0 20px oklch(0.55 0.22 25 / 0.4);padding:10px 22px;border-radius:999px;font-weight:600;font-size:14px">Book a Call</a>
+  </div>
+</div>
+
+<section style="max-width:1280px;margin:0 auto;padding:72px 32px 40px;text-align:center">
+  <div style="display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.08em;color:oklch(0.58 0.22 25);border:1px solid oklch(0.58 0.22 25 / 0.4);border-radius:999px;padding:6px 14px;margin-bottom:20px;text-transform:uppercase">Management Solutions</div>
+  <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,48px);color:oklch(0.97 0.01 250);margin:0 0 20px;letter-spacing:-0.02em">Keep every device, everywhere, under control.</h1>
+  <p style="font-size:17px;line-height:1.6;color:oklch(0.68 0.02 250);max-width:640px;margin:0 auto">Managed security operations paired with proven remote-support and classroom-management tools.</p>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:0 32px 40px">
+  <image-slot id="management-console-photo" src="assets/ph-console.png" shape="rounded" radius="12" placeholder="Management console screenshot" style="width:100%;height:320px"></image-slot>
+</section>
+
+<section id="ops" style="max-width:1280px;margin:0 auto;padding:0 32px 20px;display:flex;justify-content:center">
+  <div style="display:inline-flex;background:oklch(0.16 0.014 25);border:1px solid oklch(0.26 0.015 25);border-radius:10px;padding:4px">
+    <button onClick="{{ selectOps }}" style="{{ opsTabStyle }}">Managed IT & Security Ops</button>
+    <button onClick="{{ selectTools }}" style="{{ toolsTabStyle }}">Remote Support Tools</button>
+  </div>
+</section>
+
+<sc-if value="{{ isOps }}" hint-placeholder-val="{{ true }}">
+  <section style="max-width:1280px;margin:0 auto;padding:36px 32px 70px">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 id="endpoint-management" style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Endpoint Management</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Manage workloads and protection from a single, all-in-one console.</p>
+      </div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 id="automation" style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Advanced Automation</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Patch management, device control, and reporting on autopilot.</p>
+      </div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 id="file-sync" style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Advanced File Sync & Share</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Secure collaboration across devices and teams, wherever they work.</p>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isTools }}" hint-placeholder-val="{{ false }}">
+  <section style="max-width:1280px;margin:0 auto;padding:36px 32px 70px">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">NetSupport Manager</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 14px">Rock-solid remote support and control, trusted by IT teams for over a decade.</p>
+        <a href="./NetSupportManager.dc.html" style="font-size:13px;font-weight:600">Learn More →</a>
+      </div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">NetSupport DNA</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 14px">Complete IT asset management and monitoring across your estate.</p>
+        <a href="./NetSupportDNA.dc.html" style="font-size:13px;font-weight:600">Learn More →</a>
+      </div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">NetSupport Notify</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 14px">Mass alerting that guarantees attention, across every site and remote user.</p>
+        <a href="./NetSupportNotify.dc.html" style="font-size:13px;font-weight:600">Learn More →</a>
+      </div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">NetSupport School</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 14px">Classroom management built for focused, well-run learning environments.</p>
+        <a href="./NetSupportSchool.dc.html" style="font-size:13px;font-weight:600">Learn More →</a>
+      </div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Classroom Management Solution</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 14px">Full-suite tools for monitoring and guiding student devices.</p>
+        <a href="./ClassroomManagement.dc.html" style="font-size:13px;font-weight:600">Learn More →</a>
+      </div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:28px;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
+        <h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">247Connect</h4>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 14px">Secure remote connections over LAN/WAN or HTTP, hosted on-prem or in a private cloud.</p>
+        <a href="./Connect247.dc.html" style="font-size:13px;font-weight:600">Learn More →</a>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<section style="max-width:1280px;margin:32px auto 90px;padding:0 32px">
+  <div style="background:linear-gradient(120deg, oklch(0.18 0.08 25), oklch(0.17 0.02 250));border:1px solid oklch(0.4 0.15 25 / 0.4);border-radius:16px;padding:56px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+    <div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(24px,2.6vw,32px);color:oklch(0.97 0.01 250);margin:0 0 8px">Want a live walkthrough?</h2>
+      <p style="color:oklch(0.7 0.02 250);font-size:16px;margin:0">See our management tools running on your own environment.</p>
+    </div>
+    <a href="./Contact.dc.html" style="background:oklch(0.32 0.15 25);color:oklch(0.98 0.005 40);border:1px solid oklch(0.58 0.22 25 / 0.7);box-shadow:0 0 20px oklch(0.55 0.22 25 / 0.4);padding:16px 32px;border-radius:999px;font-weight:600;font-size:15px;white-space:nowrap">Book a Call</a>
+  </div>
+</section>
+
+<footer style="background:oklch(0.08 0.008 25);border-top:1px solid oklch(0.24 0.015 25)">
+  <div style="max-width:1280px;margin:0 auto;padding:48px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
+    <img src="assets/logo.png" alt="Tech Fortress" style="height:26px;width:auto"/>
+    <div style="display:flex;gap:24px;flex-wrap:wrap">
+      <a href="./Blog.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Blog</a>
+      <a href="./BecomeAPartner.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Become a Partner</a>
+      <a href="./TermsConditions.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Terms</a>
+      <a href="./PrivacyPolicy.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Privacy</a>
+      <a href="./About.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">About Us</a>
+      <a href="./Contact.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Contact</a>
+      <a href="mailto:info@techfortress.tech" style="color:oklch(0.6 0.02 250);font-size:14px">info@techfortress.tech</a>
+    </div>
+    <span style="color:oklch(0.5 0.02 250);font-size:13px">© 2026 Tech Fortress</span>
+  </div>
+</footer>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tab: 'ops' };
+  tabStyle(active) {
+    return `padding:10px 22px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:none;background:${active ? 'oklch(0.58 0.22 25)' : 'transparent'};color:${active ? 'oklch(0.12 0.01 25)' : 'oklch(0.65 0.02 250)'}`;
+  }
+  renderVals() {
+    return {
+      isOps: this.state.tab === 'ops',
+      isTools: this.state.tab === 'tools',
+      selectOps: () => this.setState({ tab: 'ops' }),
+      selectTools: () => this.setState({ tab: 'tools' }),
+      opsTabStyle: this.tabStyle(this.state.tab === 'ops'),
+      toolsTabStyle: this.tabStyle(this.state.tab === 'tools'),
+    };
+  }
+}
+
+</script>
+</body>
+</html>

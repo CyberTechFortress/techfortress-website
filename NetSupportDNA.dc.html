@@ -44,6 +44,7 @@
     .flyout{position:static !important;width:auto !important;margin-left:0 !important}
   }
 </style>
+<script src="./reveal.js"></script>
 </helmet>
 
 <div style="position:sticky;top:0;z-index:50;background:oklch(0.16 0.02 250 / 0.9);backdrop-filter:blur(14px);border-bottom:1px solid oklch(0.28 0.02 25 / 0.6)">
@@ -72,7 +73,6 @@
               <a href="./DataLossPrevention.dc.html">Advanced Data Loss Prevention (DLP)</a>
               <a href="./EndpointManagement.dc.html">Endpoint Management</a>
               <a href="./DisasterRecovery.dc.html">Disaster Recovery</a>
-              <a href="./FileSyncShare.dc.html">Advanced File Sync and Share</a>
               <a href="./AdvancedAutomation.dc.html">Advanced Automation</a>
               <a href="./Microsoft365.dc.html">Microsoft 365 Collaboration</a>
             </div>
@@ -85,8 +85,8 @@
       <div class="nav-item" style="display:flex;align-items:center">
         <a href="./Management.dc.html" style="color:oklch(0.58 0.22 25);font-weight:600;font-size:14px;border-bottom:2px solid oklch(0.58 0.22 25);padding-bottom:4px">Management ▾</a>
         <div class="dropdown">
-          <a href="./Management.dc.html#ops"><span class="ic"><i></i></span>Security Ops</a>
-          <a href="./NetSupportManager.dc.html"><span class="ic"><i></i></span>Net Support Manager</a>
+          <a href="./Management.dc.html"><span class="ic"><i></i></span>Security Ops</a>
+          <a href="./NetSupportManager.dc.html"><span class="ic"><i></i></span>Secure Remote Control</a>
           <a href="./NetSupportDNA.dc.html"><span class="ic"><i></i></span>Net Support DNA</a>
           <a href="./NetSupportNotify.dc.html"><span class="ic"><i></i></span>NetSupport Notify</a>
           <a href="./NetSupportSchool.dc.html"><span class="ic"><i></i></span>Net Support School</a>
@@ -126,13 +126,9 @@
     <p style="color:oklch(0.68 0.02 250);font-size:15px;line-height:1.7;margin:0 0 20px">Armed with a complete overview of IT activity, NetSupport DNA helps technicians work smarter, maintaining a secure and reliable network. From staying ahead of potential issues before they escalate, to onboarding tools or viewing a handy software distribution status report, DNA gathers a wealth of device and usage data to inform decision making and drive smarter planning of talent, IT spending and refresh cycles.</p>
     <a href="./Contact.dc.html" style="font-weight:600;font-size:15px">Get in touch with us →</a>
   </div>
-  <div style="position:relative;border-radius:12px;overflow:hidden;border:1px solid oklch(0.26 0.015 25)">
-    <image-slot id="netsupport-dna-video-corp" src="assets/ph-video.png" shape="rect" placeholder="Product highlights video" style="width:100%;aspect-ratio:16/9"></image-slot>
-    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none">
-      <div style="width:64px;height:64px;border-radius:50%;background:oklch(0.5 0.19 25);box-shadow:0 0 32px oklch(0.55 0.22 25 / 0.7);display:flex;align-items:center;justify-content:center">
-        <div style="width:0;height:0;border-top:11px solid transparent;border-bottom:11px solid transparent;border-left:18px solid white;margin-left:4px"></div>
-      </div>
-    </div>
+  <div style="position:relative;border-radius:12px;overflow:hidden;border:1px solid oklch(0.26 0.015 25);aspect-ratio:16/9">
+    <iframe src="https://www.youtube.com/embed/0VDbDlxFf0Y" title="NetSupport DNA — Corporate" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
   </div>
 </section>
 
@@ -164,13 +160,9 @@
 
 <section style="background:oklch(0.1 0.01 25);border-top:1px solid oklch(0.24 0.015 25);border-bottom:1px solid oklch(0.24 0.015 25)">
   <div style="max-width:1280px;margin:0 auto;padding:70px 32px;display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center">
-    <div style="position:relative;border-radius:12px;overflow:hidden;border:1px solid oklch(0.26 0.015 25)">
-      <image-slot id="netsupport-dna-video-edu" src="assets/ph-video.png" shape="rect" placeholder="Education highlights video" style="width:100%;aspect-ratio:16/9"></image-slot>
-      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none">
-        <div style="width:64px;height:64px;border-radius:50%;background:oklch(0.5 0.19 25);box-shadow:0 0 32px oklch(0.55 0.22 25 / 0.7);display:flex;align-items:center;justify-content:center">
-          <div style="width:0;height:0;border-top:11px solid transparent;border-bottom:11px solid transparent;border-left:18px solid white;margin-left:4px"></div>
-        </div>
-      </div>
+    <div style="position:relative;border-radius:12px;overflow:hidden;border:1px solid oklch(0.26 0.015 25);aspect-ratio:16/9">
+      <iframe src="https://www.youtube.com/embed/0VDbDlxFf0Y" title="NetSupport DNA — Education" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     </div>
     <div>
       <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:0 0 6px;letter-spacing:-0.02em">NetSupport DNA <span style="color:oklch(0.58 0.22 25)">(Education Edition)</span></h2>
@@ -199,19 +191,76 @@
   </div>
 </section>
 
-<footer style="background:oklch(0.08 0.008 25);border-top:1px solid oklch(0.24 0.015 25)">
-  <div style="max-width:1280px;margin:0 auto;padding:48px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
-    <img src="assets/logo.png" alt="Tech Fortress" style="height:26px;width:auto"/>
-    <div style="display:flex;gap:24px;flex-wrap:wrap">
-      <a href="./Blog.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Blog</a>
-      <a href="./BecomeAPartner.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Become a Partner</a>
-      <a href="./TermsConditions.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Terms</a>
-      <a href="./PrivacyPolicy.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Privacy</a>
-      <a href="./Management.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Management</a>
-      <a href="./Contact.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Contact</a>
+<section style="max-width:1280px;margin:0 auto;padding:20px 32px 60px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;padding:30px">
+      <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:20px;margin:0 0 6px">Corporate Edition</h3>
+      <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 18px">Track, monitor and manage IT assets and endpoints across a business from one central point.</p>
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Hardware inventory & discovery</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Software licence management</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Internet & application metering</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Endpoint security & system-wide alerting</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Energy monitoring & power management</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Remote control & admin tools</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Multi-site support & GDPR toolkit</span></div>
+      </div>
     </div>
-    <span style="color:oklch(0.5 0.02 250);font-size:13px">© 2026 Tech Fortress</span>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;padding:30px">
+      <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:20px;margin:0 0 6px">Education Edition</h3>
+      <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 18px">Manage classroom and school technology while safeguarding students and supporting teachers.</p>
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Contextual-intelligence Risk Index</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Keyword monitoring & online-safety alerts</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Track 'at-risk' student activity</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Screen capture / record</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Enforce Acceptable Use Policies</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:7px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:13.5px">Student 'Report a Concern' & language packs</span></div>
+      </div>
+    </div>
   </div>
+</section>
+
+<footer style="background:oklch(0.08 0.008 25);border-top:1px solid oklch(0.24 0.015 25)">
+  <div style="max-width:1280px;margin:0 auto;padding:64px 32px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <img src="assets/logo.png" alt="Tech Fortress" style="height:30px;width:auto">
+      </div>
+      <p style="color:oklch(0.55 0.02 250);font-size:14px;line-height:1.6;max-width:320px">A leading cybersecurity and IT company protecting businesses worldwide and enhancing their infrastructure.</p>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Quick Links</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="./About.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">About Us</a>
+        <a href="./Security.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Security Solutions</a>
+        <a href="./Contact.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Contact Us</a>
+        <a href="./Blog.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Blog</a>
+        <a href="./BecomeAPartner.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Become a Partner</a>
+        <a href="./TermsConditions.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Terms &amp; Conditions</a>
+        <a href="./PrivacyPolicy.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Privacy Policy</a>
+      </div>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Services</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="./Security.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Cybersecurity</a>
+        <a href="./Support.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Managed IT Services</a>
+        <a href="./DataManagement.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Data Management</a>
+        <a href="./Management.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Management Solutions</a>
+      </div>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Contact</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="tel:0097148523999" style="color:oklch(0.6 0.02 250);font-size:14px">+971 4 852 3999</a>
+        <a href="tel:00971585850221" style="color:oklch(0.6 0.02 250);font-size:14px">+971 58 585 0221</a>
+        <a href="mailto:info@techfortress.tech" style="color:oklch(0.6 0.02 250);font-size:14px">info@techfortress.tech</a>
+        <span style="color:oklch(0.6 0.02 250);font-size:14px">Office 1401, Boulevard Plaza Tower 1, Dubai, UAE</span>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1280px;margin:0 auto;padding:24px 32px;border-top:1px solid oklch(0.24 0.02 250);color:oklch(0.5 0.02 250);font-size:13px">© 2026 Tech Fortress. All rights reserved.</div>
 </footer>
 
 </x-dc>

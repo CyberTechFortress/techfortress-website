@@ -44,6 +44,7 @@
     .flyout{position:static !important;width:auto !important;margin-left:0 !important}
   }
 </style>
+<script src="./reveal.js"></script>
 </helmet>
 
 <div style="position:sticky;top:0;z-index:50;background:oklch(0.16 0.02 250 / 0.9);backdrop-filter:blur(14px);border-bottom:1px solid oklch(0.28 0.02 25 / 0.6)">
@@ -72,7 +73,6 @@
               <a href="./DataLossPrevention.dc.html">Advanced Data Loss Prevention (DLP)</a>
               <a href="./EndpointManagement.dc.html">Endpoint Management</a>
               <a href="./DisasterRecovery.dc.html">Disaster Recovery</a>
-              <a href="./FileSyncShare.dc.html">Advanced File Sync and Share</a>
               <a href="./AdvancedAutomation.dc.html">Advanced Automation</a>
               <a href="./Microsoft365.dc.html">Microsoft 365 Collaboration</a>
             </div>
@@ -85,8 +85,8 @@
       <div class="nav-item" style="display:flex;align-items:center">
         <a href="./Management.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">Management ▾</a>
         <div class="dropdown">
-          <a href="./Management.dc.html#ops"><span class="ic"><i></i></span>Security Ops</a>
-          <a href="./NetSupportManager.dc.html"><span class="ic"><i></i></span>Net Support Manager</a>
+          <a href="./Management.dc.html"><span class="ic"><i></i></span>Security Ops</a>
+          <a href="./NetSupportManager.dc.html"><span class="ic"><i></i></span>Secure Remote Control</a>
           <a href="./NetSupportDNA.dc.html"><span class="ic"><i></i></span>Net Support DNA</a>
           <a href="./NetSupportNotify.dc.html"><span class="ic"><i></i></span>NetSupport Notify</a>
           <a href="./NetSupportSchool.dc.html"><span class="ic"><i></i></span>Net Support School</a>
@@ -218,6 +218,31 @@
     </div>
   </section>
 
+<section style="max-width:1280px;margin:0 auto;padding:20px 32px 40px">
+  <div style="text-align:center;margin-bottom:36px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Active Protection</span>
+    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:clamp(24px,2.8vw,32px);margin:10px auto 0;letter-spacing:-0.02em">Backup that actively defends your data</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Active Protection technology</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Exploit prevention, URL filtering, and anti-ransomware / anti-malware detection for backed-up data — catching more threats, faster.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Security automation</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Smart protection-policy management, auto-allowlisting of custom apps, and automatic malware scans and definition updates as part of the recovery process.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Efficient forensics</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Collect digital evidence in a secure central repository to enable thorough post-incident investigation and proper remediation, while keeping costs down.</p></div>
+  </div>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:20px 32px 40px">
+  <div style="text-align:center;margin-bottom:36px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Capabilities</span>
+    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:clamp(24px,2.8vw,32px);margin:10px auto 0;letter-spacing:-0.02em">Hybrid backup, built for zero data loss</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Hybrid cloud backup & recovery</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Back up and recover systems, applications and data via both local and cloud storage — file-level, disk-level, image and application backups across Windows, Mac, Linux, Microsoft 365, Google Workspace, Hyper-V and VMware.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Continuous data protection (CDP)</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Define your critical applications and our agent monitors and backs up every change in real time with near-zero RPO — so in-progress work is never lost.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Data protection map & compliance</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Automatic data classification tracks the protection status of important files, folders and workstations, and raises an alert when critical data is left unprotected.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Application & database backup</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Built-in backup and restore for Microsoft Exchange, SQL Server, Oracle DBMS clusters and SAP HANA — with flexible recovery from full systems down to granular files.</p></div>
+  </div>
+</section>
+
 <section style="max-width:900px;margin:0 auto;padding:70px 32px 20px">
     <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">FAQs</span>
     <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 28px;letter-spacing:-0.02em">Frequently asked questions</h3>
@@ -242,18 +267,45 @@
   </section>
 
 <footer style="background:oklch(0.08 0.008 25);border-top:1px solid oklch(0.24 0.015 25)">
-  <div style="max-width:1280px;margin:0 auto;padding:48px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
-    <img src="assets/logo.png" alt="Tech Fortress" style="height:26px;width:auto"/>
-    <div style="display:flex;gap:24px;flex-wrap:wrap">
-      <a href="./Blog.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Blog</a>
-      <a href="./BecomeAPartner.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Become a Partner</a>
-      <a href="./TermsConditions.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Terms</a>
-      <a href="./PrivacyPolicy.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Privacy</a>
-      <a href="./Management.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Management</a>
-      <a href="./Contact.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Contact</a>
+  <div style="max-width:1280px;margin:0 auto;padding:64px 32px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <img src="assets/logo.png" alt="Tech Fortress" style="height:30px;width:auto">
+      </div>
+      <p style="color:oklch(0.55 0.02 250);font-size:14px;line-height:1.6;max-width:320px">A leading cybersecurity and IT company protecting businesses worldwide and enhancing their infrastructure.</p>
     </div>
-    <span style="color:oklch(0.5 0.02 250);font-size:13px">© 2026 Tech Fortress</span>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Quick Links</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="./About.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">About Us</a>
+        <a href="./Security.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Security Solutions</a>
+        <a href="./Contact.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Contact Us</a>
+        <a href="./Blog.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Blog</a>
+        <a href="./BecomeAPartner.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Become a Partner</a>
+        <a href="./TermsConditions.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Terms &amp; Conditions</a>
+        <a href="./PrivacyPolicy.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Privacy Policy</a>
+      </div>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Services</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="./Security.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Cybersecurity</a>
+        <a href="./Support.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Managed IT Services</a>
+        <a href="./DataManagement.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Data Management</a>
+        <a href="./Management.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Management Solutions</a>
+      </div>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Contact</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="tel:0097148523999" style="color:oklch(0.6 0.02 250);font-size:14px">+971 4 852 3999</a>
+        <a href="tel:00971585850221" style="color:oklch(0.6 0.02 250);font-size:14px">+971 58 585 0221</a>
+        <a href="mailto:info@techfortress.tech" style="color:oklch(0.6 0.02 250);font-size:14px">info@techfortress.tech</a>
+        <span style="color:oklch(0.6 0.02 250);font-size:14px">Office 1401, Boulevard Plaza Tower 1, Dubai, UAE</span>
+      </div>
+    </div>
   </div>
+  <div style="max-width:1280px;margin:0 auto;padding:24px 32px;border-top:1px solid oklch(0.24 0.02 250);color:oklch(0.5 0.02 250);font-size:13px">© 2026 Tech Fortress. All rights reserved.</div>
 </footer>
 
 </x-dc>

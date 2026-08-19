@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta charset="utf-8">
+<title>Backup for Microsoft 365 — Tech Fortress</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body{margin:0;background:oklch(0.1 0.006 25) radial-gradient(oklch(0.3 0.02 25 / 0.5) 1px, transparent 1px) 0 0/24px 24px;font-family:'Inter',sans-serif;color:oklch(0.55 0.02 250);}
+  a{color:oklch(0.58 0.22 25);text-decoration:none;}
+  a:hover{color:oklch(0.68 0.22 25);}
+  .nav-item{position:relative;padding-bottom:16px;margin-bottom:-16px}
+  .nav-item .dropdown{display:none;position:absolute;top:100%;left:0;margin-top:0;background:oklch(0.99 0.002 250);border:1px solid oklch(0.9 0.005 250);border-radius:12px;padding:8px;width:300px;grid-template-columns:1fr 1fr;gap:4px;box-shadow:0 22px 44px rgba(0,0,0,.45);z-index:70}
+  .nav-item:hover .dropdown{display:grid}
+  .dropdown a{display:flex;align-items:center;gap:7px;padding:7px 8px;border-radius:7px;color:oklch(0.32 0.01 250);font-size:11.5px;font-weight:600;line-height:1.25;text-decoration:none}
+  .dropdown a:hover{background:oklch(0.95 0.01 250)}
+  .dropdown a .ic{width:16px;height:16px;border-radius:4px;background:oklch(0.5 0.19 25);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+  .dropdown a .ic i{width:6px;height:3px;border-left:1.5px solid white;border-bottom:1.5px solid white;transform:rotate(-45deg) translate(0.5px,-0.5px);display:block}
+
+  .dropdown-l1{display:none;position:absolute;top:100%;left:0;margin-top:0;background:oklch(0.99 0.002 250);border:1px solid oklch(0.9 0.005 250);border-radius:10px;padding:6px;width:210px;box-shadow:0 22px 44px rgba(0,0,0,.45);z-index:70}
+  .nav-item:hover .dropdown-l1{display:block}
+  .l1-row{position:relative;padding-right:8px;margin-right:-8px}
+  .l1-row>a{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:7px;color:oklch(0.28 0.01 250);font-size:13px;font-weight:600;text-decoration:none}
+  .l1-row>a:hover{background:oklch(0.95 0.01 250)}
+  .flyout{display:none;position:absolute;top:0;left:100%;margin-left:0;background:oklch(0.99 0.002 250);border:1px solid oklch(0.9 0.005 250);border-radius:10px;padding:8px;width:250px;box-shadow:0 22px 44px rgba(0,0,0,.45)}
+  .l1-row:hover .flyout{display:block}
+  .flyout a{display:block;padding:8px 12px;border-radius:7px;color:oklch(0.32 0.01 250);font-size:12.5px;font-weight:600;text-decoration:none;line-height:1.3}
+  .flyout a:hover{background:oklch(0.95 0.01 250)}
+  image-slot{min-width:0;max-width:100%}
+  [style*="grid-template-columns"]>*{min-width:0}
+  @media(max-width:860px){
+    [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+    nav{gap:12px !important;justify-content:center}
+    [style*="max-width:1280px"]{padding-left:20px !important;padding-right:20px !important}
+    .dropdown,.dropdown-l1{position:static !important;width:auto !important;margin-top:8px !important}
+    .flyout{position:static !important;width:auto !important;margin-left:0 !important}
+  }
+</style>
+<script src="./reveal.js"></script>
+</helmet>
+
+<div style="position:sticky;top:0;z-index:50;background:oklch(0.16 0.02 250 / 0.9);backdrop-filter:blur(14px);border-bottom:1px solid oklch(0.28 0.02 25 / 0.6)">
+  <div style="max-width:1280px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <a href="./Home.dc.html" style="display:flex;align-items:center;gap:10px">
+      <img src="assets/logo.png" alt="Tech Fortress" style="height:38px;width:auto"/>
+    </a>
+    <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
+      <a href="./Home.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">Home</a>
+      <div class="nav-item" style="display:flex;align-items:center">
+        <a href="./Security.dc.html" style="color:oklch(0.58 0.22 25);font-weight:600;font-size:14px;border-bottom:2px solid oklch(0.58 0.22 25);padding-bottom:4px">Security ▾</a>
+        <div class="dropdown-l1">
+          <div class="l1-row">
+            <a href="./EndpointSecurity.dc.html">Endpoint Security <span>▸</span></a>
+            <div class="flyout">
+              <a href="./AdvancedEmailSecurity.dc.html">Email Security</a>
+              <a href="./EDR.dc.html">Endpoint Detection & Response (EDR)</a>
+              <a href="./MDR.dc.html">Managed Detection & Response (MDR)</a>
+              <a href="./XDR.dc.html">Extended Detection & Response (XDR)</a>
+              <a href="./RansomwareProtection.dc.html">Ransomware Protection</a>
+              <a href="./SecurityAwarenessTraining.dc.html">Security Awareness Training (SAT)</a>
+              <a href="./GenAIProtection.dc.html">GenAI Protection</a>
+            </div>
+          </div>
+          <div class="l1-row">
+            <a href="./DataManagement.dc.html">Data Management <span>▸</span></a>
+            <div class="flyout">
+              <a href="./BackupRecovery.dc.html">Backup and Recovery</a>
+              <a href="./DataLossPrevention.dc.html">Advanced Data Loss Prevention (DLP)</a>
+              <a href="./M365Backup.dc.html">Backup for Microsoft 365</a>
+              <a href="./EndpointManagement.dc.html">Endpoint Management</a>
+              <a href="./DisasterRecovery.dc.html">Disaster Recovery</a>
+              <a href="./CyberFrame.dc.html">Cyber Frame</a>
+            </div>
+          </div>
+          <div class="l1-row">
+            <a href="./NetworkSecurity.dc.html">Network Security</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item" style="display:flex;align-items:center">
+        <a href="./Management.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">Management ▾</a>
+        <div class="dropdown">
+          <a href="./Management.dc.html"><span class="ic"><i></i></span>Security Ops</a>
+          <a href="./NetSupportManager.dc.html"><span class="ic"><i></i></span>Secure Remote Control</a>
+          <a href="./NetSupportDNA.dc.html"><span class="ic"><i></i></span>Net Support DNA</a>
+          <a href="./NetSupportNotify.dc.html"><span class="ic"><i></i></span>NetSupport Notify</a>
+          <a href="./NetSupportSchool.dc.html"><span class="ic"><i></i></span>Net Support School</a>
+          <a href="./ClassroomManagement.dc.html"><span class="ic"><i></i></span>Classroom Management</a>
+          <a href="./Connect247.dc.html"><span class="ic"><i></i></span>247Connect</a>
+        </div>
+      </div>
+      <div class="nav-item" style="display:flex;align-items:center">
+        <a href="./Support.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">Support ▾</a>
+        <div class="dropdown">
+          <a href="./Support.dc.html#it-managed-service"><span class="ic"><i></i></span>IT Managed Service</a>
+          <a href="./ITInfrastructure.dc.html"><span class="ic"><i></i></span>IT Infrastructure & AMC</a>
+        </div>
+      </div>
+      <a href="./CustomerSuccess.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">CSaaS</a>
+      <a href="./About.dc.html" style="color:oklch(0.85 0.01 250);font-size:14px">About Us</a>
+    </nav>
+    <a href="./Contact.dc.html" style="background:oklch(0.32 0.15 25);color:oklch(0.98 0.005 40);border:1px solid oklch(0.58 0.22 25 / 0.7);box-shadow:0 0 20px oklch(0.55 0.22 25 / 0.4);padding:10px 22px;border-radius:999px;font-weight:600;font-size:14px">Book a Call</a>
+  </div>
+</div>
+
+<section style="max-width:1280px;margin:0 auto;padding:72px 32px 40px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center">
+  <div>
+    <div style="display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.08em;color:oklch(0.58 0.22 25);border:1px solid oklch(0.58 0.22 25 / 0.4);border-radius:999px;padding:6px 14px;margin-bottom:20px;text-transform:uppercase">Security → Data Management</div>
+    <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,48px);color:oklch(0.97 0.01 250);margin:0 0 20px;letter-spacing:-0.02em">Backup for Microsoft 365</h1>
+    <p style="font-size:17px;line-height:1.6;color:oklch(0.68 0.02 250);margin:0 0 28px">Microsoft does not back up your data — you do. Protect Exchange Online, OneDrive, SharePoint and Teams with fast, reliable cloud-to-cloud backup and granular recovery.</p>
+    <a href="./Contact.dc.html" style="background:oklch(0.32 0.15 25);color:oklch(0.98 0.005 40);border:1px solid oklch(0.58 0.22 25 / 0.7);box-shadow:0 0 20px oklch(0.55 0.22 25 / 0.4);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px">Book a Call</a>
+  </div>
+  <image-slot id="m365-hero" src="assets/backup-dashboard.png" shape="rounded" radius="12" placeholder="Microsoft 365 backup dashboard" style="width:100%;aspect-ratio:16/10"></image-slot>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:20px 32px 40px">
+  <div style="max-width:820px">
+    <div style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px">Security → Data Management</div>
+    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:0 0 16px;letter-spacing:-0.02em">The gap Microsoft leaves — and we close</h2>
+    <p style="color:oklch(0.68 0.02 250);font-size:15px;line-height:1.7;margin:0 0 14px">Microsoft 365 protects its infrastructure, but your data is your responsibility. Accidental deletion, ransomware, malicious insiders, retention-policy gaps and sync errors can all lose data that Microsoft native retention will not bring back.</p>
+    <p style="color:oklch(0.68 0.02 250);font-size:15px;line-height:1.7;margin:0 0 20px">We back up your entire Microsoft 365 environment to secure cloud storage, so you can restore exactly what you need — a single email, a whole mailbox, a SharePoint site — in minutes.</p>
+    <a href="./Security.dc.html" style="font-weight:600;font-size:15px">← Back to Security</a>
+  </div>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:24px 32px 60px">
+  <div style="background:linear-gradient(120deg, oklch(0.32 0.15 25), oklch(0.2 0.09 25));border:1px solid oklch(0.5 0.18 25 / 0.5);border-radius:14px;padding:32px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <p style="color:oklch(0.98 0.01 250);font-size:17px;font-weight:600;margin:0;max-width:640px;line-height:1.5">Let us discuss your needs in detail! Schedule a meeting and our team of experts will help you take things forward.</p>
+    <a href="./Contact.dc.html" style="background:oklch(0.1 0.006 25);color:oklch(0.98 0.01 250);padding:14px 26px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap">Schedule an Appointment</a>
+  </div>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:0 32px 40px">
+  <div style="text-align:center;margin-bottom:36px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Full Coverage</span>
+    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:clamp(24px,2.8vw,32px);margin:10px auto 0;letter-spacing:-0.02em">Every Microsoft 365 workload protected</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Exchange Online</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Back up and restore mailboxes, individual emails, attachments, calendars and contacts.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">OneDrive for Business</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Protect and recover user files and folders with full version history.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">SharePoint Online</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Back up sites, libraries, lists and permissions — restore granularly or in full.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Microsoft Teams</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Protect Teams channels, files and conversations so collaboration data is never lost.</p></div>
+  </div>
+</section>
+
+<section style="background:oklch(0.1 0.01 25);border-top:1px solid oklch(0.24 0.015 25);border-bottom:1px solid oklch(0.24 0.015 25)">
+  <div style="max-width:1280px;margin:0 auto;padding:70px 32px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Why It Matters</span>
+    <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 28px;letter-spacing:-0.02em">Peace of mind for your cloud data</h3>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Fast, granular recovery</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Find and restore exactly what you need — down to a single email or file — in minutes, with powerful search.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Ransomware and deletion safe</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Isolated, secure backups mean you can recover clean data even after ransomware or accidental (or malicious) deletion.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Compliance and retention</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Keep data as long as you need with flexible retention that goes well beyond Microsoft native limits.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:70px 32px 20px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Key capabilities</span>
+    <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 28px;letter-spacing:-0.02em">Enterprise-grade M365 protection</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px 48px">
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Automated daily backups (multiple per day available)</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Exchange, OneDrive, SharePoint and Teams coverage</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Granular, point-in-time recovery</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Fast full-text search across backups</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Secure, encrypted cloud storage</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Flexible long-term retention</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Restore to the same or a different account</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Simple, centralized management</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Scalable across all your users</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">…and much more</span></div>
+  </div>
+</section>
+
+<section style="max-width:900px;margin:0 auto;padding:70px 32px 20px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">FAQs</span>
+    <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 28px;letter-spacing:-0.02em">Frequently asked questions</h3>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:24px 26px"><h4 style="color:oklch(0.95 0.01 250);font-size:16px;margin:0 0 8px;font-family:'Space Grotesk',sans-serif">Does Microsoft already back up my data?</h4><p style="color:oklch(0.68 0.02 250);font-size:14.5px;line-height:1.7;margin:0">No. Microsoft protects its infrastructure and offers only limited native retention. Under the shared-responsibility model, recovering your data is your job — which is what this backup provides.</p></div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:24px 26px"><h4 style="color:oklch(0.95 0.01 250);font-size:16px;margin:0 0 8px;font-family:'Space Grotesk',sans-serif">What can I restore?</h4><p style="color:oklch(0.68 0.02 250);font-size:14.5px;line-height:1.7;margin:0">Anything from a single email, file or Teams message to a full mailbox, OneDrive or SharePoint site — to the original or a different account.</p></div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:24px 26px"><h4 style="color:oklch(0.95 0.01 250);font-size:16px;margin:0 0 8px;font-family:'Space Grotesk',sans-serif">How often are backups taken?</h4><p style="color:oklch(0.68 0.02 250);font-size:14.5px;line-height:1.7;margin:0">Backups run automatically every day, with the option for multiple backups per day for the data that matters most.</p></div>
+      <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:24px 26px"><h4 style="color:oklch(0.95 0.01 250);font-size:16px;margin:0 0 8px;font-family:'Space Grotesk',sans-serif">Is the backup data secure?</h4><p style="color:oklch(0.68 0.02 250);font-size:14.5px;line-height:1.7;margin:0">Yes. Data is encrypted and stored in secure cloud storage, isolated from your live environment so it stays safe from ransomware and deletion.</p></div>
+    </div>
+  </section>
+
+<footer style="background:oklch(0.08 0.008 25);border-top:1px solid oklch(0.24 0.015 25)">
+  <div style="max-width:1280px;margin:0 auto;padding:64px 32px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+        <img src="assets/logo.png" alt="Tech Fortress" style="height:30px;width:auto">
+      </div>
+      <p style="color:oklch(0.55 0.02 250);font-size:14px;line-height:1.6;max-width:320px">A leading cybersecurity and IT company protecting businesses worldwide and enhancing their infrastructure.</p>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Quick Links</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="./About.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">About Us</a>
+        <a href="./Security.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Security Solutions</a>
+        <a href="./Contact.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Contact Us</a>
+        <a href="./Blog.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Blog</a>
+        <a href="./BecomeAPartner.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Become a Partner</a>
+        <a href="./TermsConditions.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Terms &amp; Conditions</a>
+        <a href="./PrivacyPolicy.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Privacy Policy</a>
+      </div>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Services</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="./Security.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Cybersecurity</a>
+        <a href="./Support.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Managed IT Services</a>
+        <a href="./DataManagement.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Data Management</a>
+        <a href="./Management.dc.html" style="color:oklch(0.6 0.02 250);font-size:14px">Management Solutions</a>
+      </div>
+    </div>
+    <div>
+      <h5 style="color:oklch(0.9 0.01 250);font-size:14px;margin:0 0 16px;letter-spacing:0.04em;text-transform:uppercase">Contact</h5>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="tel:0097148523999" style="color:oklch(0.6 0.02 250);font-size:14px">+971 4 852 3999</a>
+        <a href="tel:00971585850221" style="color:oklch(0.6 0.02 250);font-size:14px">+971 58 585 0221</a>
+        <a href="mailto:info@techfortress.tech" style="color:oklch(0.6 0.02 250);font-size:14px">info@techfortress.tech</a>
+        <span style="color:oklch(0.6 0.02 250);font-size:14px">Office 1401, Boulevard Plaza Tower 1, Dubai, UAE</span>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1280px;margin:0 auto;padding:24px 32px;border-top:1px solid oklch(0.24 0.02 250);color:oklch(0.5 0.02 250);font-size:13px">© 2026 Tech Fortress. All rights reserved.</div>
+</footer>
+
+</x-dc>
+</body>
+</html>

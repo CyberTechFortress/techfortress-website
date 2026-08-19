@@ -9,7 +9,7 @@
 <x-dc>
 <helmet>
 <meta charset="utf-8">
-<title>Endpoint Detection & Response (EDR) — Tech Fortress</title>
+<title>Extended Detection & Response (XDR) — Tech Fortress</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="./image-slot.js"></script>
@@ -113,24 +113,58 @@
 
 <section style="max-width:1280px;margin:0 auto;padding:72px 32px 40px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center">
   <div>
-    <div style="display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.08em;color:oklch(0.58 0.22 25);border:1px solid oklch(0.58 0.22 25 / 0.4);border-radius:999px;padding:6px 14px;margin-bottom:20px;text-transform:uppercase">Security → Endpoint Security</div>
-    <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,48px);color:oklch(0.97 0.01 250);margin:0 0 20px;letter-spacing:-0.02em">Endpoint Detection & Response (EDR)</h1>
-    <p style="font-size:17px;line-height:1.6;color:oklch(0.68 0.02 250);margin:0 0 28px">Behaviour-based detection and response that stops ransomware and zero-day attacks before they spread — with full forensics on every incident.</p>
+    <div style="display:inline-block;font-size:12px;font-weight:600;letter-spacing:0.08em;color:oklch(0.58 0.22 25);border:1px solid oklch(0.58 0.22 25 / 0.4);border-radius:999px;padding:6px 14px;margin-bottom:20px;text-transform:uppercase">Security</div>
+    <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4vw,48px);color:oklch(0.97 0.01 250);margin:0 0 20px;letter-spacing:-0.02em">Extended Detection & Response (XDR)</h1>
+    <p style="font-size:17px;line-height:1.6;color:oklch(0.68 0.02 250);margin:0 0 28px">See the whole attack, not just one device. XDR correlates signals across endpoints, email, identity and collaboration apps into a single prioritized incident — so threats are understood and stopped fast.</p>
     <a href="./Contact.dc.html" style="background:oklch(0.32 0.15 25);color:oklch(0.98 0.005 40);border:1px solid oklch(0.58 0.22 25 / 0.7);box-shadow:0 0 20px oklch(0.55 0.22 25 / 0.4);padding:14px 28px;border-radius:999px;font-weight:600;font-size:15px">Book a Call</a>
   </div>
-  <image-slot id="edr-hero" src="assets/edr-dashboard.png" shape="rounded" radius="12" placeholder="EDR dashboard" style="width:100%;aspect-ratio:16/10"></image-slot>
+  <image-slot id="xdr-hero" src="assets/edr-dashboard.png" shape="rounded" radius="12" placeholder="XDR dashboard" style="width:100%;aspect-ratio:16/10"></image-slot>
 </section>
 
-<section style="max-width:1280px;margin:0 auto;padding:20px 32px 40px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
-  <div>
-    <div style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px">Security → Endpoint Security</div>
-    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:0 0 16px;letter-spacing:-0.02em">Detection & Response</h2>
-    <p style="color:oklch(0.68 0.02 250);font-size:15px;line-height:1.7;margin:0 0 14px">Legacy antivirus reacts to known signatures. Our EDR watches behaviour in real time, catching novel and evasive threats the moment they act — then isolates the affected endpoint automatically.</p>
-    <p style="color:oklch(0.68 0.02 250);font-size:15px;line-height:1.7;margin:0 0 20px">Every alert comes with a full forensic timeline so your team can see exactly what happened, contain it, and remediate with confidence.</p>
+<section style="max-width:1280px;margin:0 auto;padding:20px 32px 40px">
+  <div style="max-width:820px">
+    <div style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px">Security → Extended Detection & Response</div>
+    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:0 0 16px;letter-spacing:-0.02em">Detection beyond the endpoint</h2>
+    <p style="color:oklch(0.68 0.02 250);font-size:15px;line-height:1.7;margin:0 0 14px">EDR watches the endpoint. XDR goes further — connecting the dots across endpoints, email security, Microsoft 365 collaboration apps and identity, so an attack that moves between them is seen as one story, not scattered alerts.</p>
+    <p style="color:oklch(0.68 0.02 250);font-size:15px;line-height:1.7;margin:0 0 20px">The result is faster, more accurate detection and a single-click response that contains threats across every layer at once.</p>
     <a href="./Security.dc.html" style="font-weight:600;font-size:15px">← Back to Security</a>
   </div>
-  <div style="position:relative;border-radius:12px;overflow:hidden;border:1px solid oklch(0.26 0.015 25);aspect-ratio:16/9">
-    <iframe src="https://www.youtube.com/embed/UQaj-mXkkaM?start=4" title="EDR product video" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:70px 32px 20px;display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:center">
+  <div style="border-radius:12px;overflow:hidden;border:1px solid oklch(0.26 0.015 25)"><image-slot id="xdr-killchain" src="assets/xdr-killchain.png" shape="rounded" radius="12" placeholder="XDR cyber kill chain" style="width:100%;display:block"></image-slot></div>
+  <div>
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Complete Protection</span>
+    <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 20px;letter-spacing:-0.02em">Unlock complete protection with XDR that spans across NIST</h3>
+    <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0 0 16px">Stop counting on multiple point security solutions for protection against the plethora of complex threats. Comprehensive protection of endpoints, vulnerable attack surfaces and data doesn't have to require multiple solution integrations — introducing high resource needs and costs, security silos, long time to value and additional staffing.</p>
+    <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0">With a single platform for holistic protection and business continuity, aligned with established industry standards such as NIST, you get enterprise-grade defense without the complexity.</p>
+  </div>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:20px 32px 40px">
+  <div style="text-align:center;margin-bottom:36px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Full Visibility</span>
+    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:clamp(24px,2.8vw,32px);margin:10px auto 0;letter-spacing:-0.02em">Telemetry from your most vulnerable attack surfaces</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Email security telemetry</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Integrates with Advanced Email Security to pull email threat signals into every incident — and delete malicious attachments or URLs across mailboxes.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Identity telemetry</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Integrates with Microsoft Entra ID to bring identity signals into view — so compromised accounts are caught and contained.</p></div>
+    <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:26px"><h4 style="color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 10px;font-family:'Space Grotesk',sans-serif">Microsoft 365 app telemetry</h4><p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0">Integrates with Collaboration App Security to extend detection across your Microsoft 365 collaboration apps.</p></div>
+  </div>
+</section>
+
+<section style="max-width:1280px;margin:0 auto;padding:20px 32px 40px">
+  <div style="text-align:center;margin-bottom:36px">
+    <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Single-Click Response</span>
+    <h2 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:clamp(24px,2.8vw,32px);margin:10px auto 0;letter-spacing:-0.02em">Contain threats across every layer in one action</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px 48px;max-width:900px;margin:0 auto">
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Endpoint quarantine and full isolation</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Attack-specific rollback and safe recovery</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Delete malicious email attachments or URLs</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Block a malicious email address</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Terminate all user sessions</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Force account password reset & suspend accounts</span></div>
   </div>
 </section>
 
@@ -144,14 +178,14 @@
 <section style="max-width:1280px;margin:0 auto;padding:0 32px 90px">
   <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:24px;margin:0 0 24px">Key capabilities</h3>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px 48px">
-    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Behaviour-based threat detection</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Automated endpoint isolation</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Full forensic incident timeline</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Ransomware & zero-day protection</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Rollback & remediation</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Cross-platform agent coverage</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Cross-layer correlation (endpoint, email, identity, M365)</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Prioritized incidents, not scattered alerts</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">AI-guided attack interpretation</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">MITRE ATT&CK® attack-chain mapping</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Single-click cross-layer response</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Integrated backup & recovery</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Threat intelligence feeds</span></div>
-    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Centralised management console</span></div>
+    <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Centralised, multi-tenant console</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">24/7 monitoring option</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Detailed reporting</span></div>
     <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Low performance overhead</span></div>
@@ -203,19 +237,19 @@
 
 <section style="max-width:1280px;margin:0 auto;padding:70px 32px 20px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:start">
     <div>
-      <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Understanding EDR</span>
-      <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 20px;letter-spacing:-0.02em">What Endpoint Detection & Response actually does</h3>
-      <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0 0 16px">Endpoint Detection and Response continuously records what happens on your laptops, desktops and servers — process launches, file changes, network connections and more — and analyses that activity for signs of an attack. Where traditional antivirus asks "does this file match a known bad signature?", EDR asks "is this behaviour consistent with an attack?", which lets it catch threats that have never been seen before.</p>
-      <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0 0 16px">When suspicious behaviour is detected, EDR can respond automatically: isolating the device from the network, killing malicious processes, and rolling back changes. Because every action is recorded, your team gets a complete forensic timeline of exactly what happened, from initial entry to final containment.</p>
-      <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0 0 16px">Delivered as part of a managed service, EDR can be paired with 24/7 monitoring so that detections are triaged and acted on by security specialists, not left waiting in a console for someone to notice.</p>
+      <span style="color:oklch(0.58 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Understanding XDR</span>
+      <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 20px;letter-spacing:-0.02em">What Extended Detection & Response actually does</h3>
+      <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0 0 16px">Attacks rarely stay on one device. A phishing email leads to a stolen login, which leads to a compromised endpoint, which spreads to your cloud apps. Tools that only watch one of those layers see fragments — XDR sees the whole chain.</p>
+      <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0 0 16px">XDR ingests signals from endpoints, email security, identity and Microsoft 365, correlates them automatically, and presents a single prioritized incident with the full story — so your team spends time responding, not stitching together alerts.</p>
+      <p style="color:oklch(0.7 0.02 250);font-size:15px;line-height:1.75;margin:0 0 16px">Delivered as a managed service, it can be paired with our 24/7 SOC so cross-layer threats are triaged and contained by specialists on your behalf.</p>
     </div>
     <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;padding:28px">
       <h4 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.96 0.01 250);font-size:17px;margin:0 0 16px">Who it's for</h4>
       <div style="display:flex;flex-direction:column;gap:12px">
-        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Businesses handling sensitive or regulated data</span></div>
-        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Teams without a dedicated in-house security operations function</span></div>
-        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Organisations that have outgrown basic antivirus</span></div>
-        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Anyone exposed to ransomware and targeted attacks</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Businesses using Microsoft 365 and cloud apps</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Teams overwhelmed by alerts from separate tools</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Organisations that already have EDR and want broader coverage</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.58 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Anyone facing multi-stage, targeted attacks</span></div>
       </div>
     </div>
   </section>
@@ -266,12 +300,12 @@
   <div style="background:linear-gradient(120deg, oklch(0.2 0.06 25), oklch(0.14 0.02 25));border:1px solid oklch(0.4 0.12 25 / 0.5);border-radius:16px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center">
     <div>
       <span style="color:oklch(0.68 0.22 25);font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase">Works With What You Have</span>
-      <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:24px;margin:10px 0 14px;letter-spacing:-0.02em">Augments Microsoft Defender</h3>
-      <p style="color:oklch(0.72 0.02 250);font-size:15px;line-height:1.7;margin:0">Already using Microsoft Defender Antivirus? Our EDR builds on top of it — adding AI-guided analysis, detection and automated response like rollback, recovery, patching and isolation — without ripping out what you have. Enterprise-grade protection at a cost that fits your business.</p>
+      <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:24px;margin:10px 0 14px;letter-spacing:-0.02em">Built on your existing security</h3>
+      <p style="color:oklch(0.72 0.02 250);font-size:15px;line-height:1.7;margin:0">XDR extends the protection you already have. It layers cross-source correlation and AI-guided response on top of endpoint, email and Microsoft 365 security — giving you enterprise-grade visibility without ripping anything out, at a cost that fits your business.</p> automated response like rollback, recovery, patching and isolation — without ripping out what you have. Enterprise-grade protection at a cost that fits your business.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:12px">
-      <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.68 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Adds detection & response on top of Defender AV</span></div>
-      <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.68 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Centralized visibility across all your devices</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.68 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Correlates endpoint, email, identity & M365 signals</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.68 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">One prioritized incident view across all layers</span></div>
       <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:oklch(0.68 0.22 25);margin-top:8px;flex-shrink:0"></div><span style="color:oklch(0.85 0.01 250);font-size:14px">Option to fully outsource monitoring to our 24/7 team</span></div>
     </div>
   </div>
@@ -282,8 +316,8 @@
     <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.97 0.01 250);font-size:28px;margin:12px 0 28px;letter-spacing:-0.02em">Frequently asked questions</h3>
     <div style="display:flex;flex-direction:column;gap:12px">
       <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:24px 26px">
-        <h4 style="color:oklch(0.95 0.01 250);font-size:16px;margin:0 0 8px;font-family:'Space Grotesk',sans-serif">How is EDR different from antivirus?</h4>
-        <p style="color:oklch(0.68 0.02 250);font-size:14.5px;line-height:1.7;margin:0">Antivirus blocks known malware by signature. EDR analyses behaviour in real time, so it can detect and respond to new, unknown and fileless attacks that antivirus misses.</p>
+        <h4 style="color:oklch(0.95 0.01 250);font-size:16px;margin:0 0 8px;font-family:'Space Grotesk',sans-serif">How is XDR different from EDR?</h4>
+        <p style="color:oklch(0.68 0.02 250);font-size:14.5px;line-height:1.7;margin:0">EDR protects the endpoint. XDR extends that visibility across email, identity and Microsoft 365 too, correlating signals from every layer into one incident so multi-stage attacks are caught.</p>
       </div>
       <div style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:12px;padding:24px 26px">
         <h4 style="color:oklch(0.95 0.01 250);font-size:16px;margin:0 0 8px;font-family:'Space Grotesk',sans-serif">Will it slow down our devices?</h4>

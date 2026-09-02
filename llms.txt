@@ -1,0 +1,58 @@
+# Tech Fortress
+
+> Tech Fortress is a Dubai-based managed cybersecurity and IT services provider serving businesses worldwide. We deliver managed detection and response, endpoint and email security, backup and data protection, and secure infrastructure — with 24/7 SOC monitoring.
+
+## Contact
+- Website: https://techfortress.tech
+- Email: info@techfortress.tech
+- Phone: +971 4 852 3999 / +971 58 585 0221
+- Address: Office 1401, Boulevard Plaza Tower 1, Downtown Dubai, UAE
+
+## Security Services
+- [Endpoint Security](https://techfortress.tech/endpointsecurity.dc): Layered protection for laptops, desktops, servers and mobile devices.
+- [Endpoint Detection & Response (EDR)](https://techfortress.tech/edr.dc): AI-guided behaviour-based detection that stops ransomware and zero-day attacks, with full forensics and single-click rollback.
+- [Extended Detection & Response (XDR)](https://techfortress.tech/xdr.dc): Correlates signals across endpoint, email, identity and Microsoft 365 in one platform.
+- [Managed Detection & Response (MDR)](https://techfortress.tech/mdr.dc): 24/7/365 SOC monitoring, threat hunting, response and recovery as a service.
+- [Email Security](https://techfortress.tech/advancedemailsecurity.dc): Seven layers blocking phishing, spoofing, business email compromise, malware and zero-days.
+- [Ransomware Protection](https://techfortress.tech/ransomwareprotection.dc): Behaviour-based ransomware defense with automatic rollback.
+- [Network Security](https://techfortress.tech/networksecurity.dc): Firewall design, segmentation, access control and vulnerability scanning.
+- [GenAI Protection](https://techfortress.tech/genaiprotection.dc): Visibility into AI tool usage and prevention of data leaking into GenAI prompts.
+- [Security Awareness Training](https://techfortress.tech/securityawarenesstraining.dc): Phishing simulation and employee security training.
+
+## Data Management
+- [Data Management](https://techfortress.tech/datamanagement.dc): Backup, DLP, disaster recovery and secure collaboration.
+- [Backup & Recovery](https://techfortress.tech/backuprecovery.dc): Cloud and hybrid backup with built-in anti-malware scanning.
+- [Data Loss Prevention (DLP)](https://techfortress.tech/datalossprevention.dc): Content-aware DLP across 70+ channels.
+- [Disaster Recovery](https://techfortress.tech/disasterrecovery.dc): Cloud failover in minutes with orchestration and runbooks.
+- [Microsoft 365 Backup](https://techfortress.tech/m365backup.dc): Protection for Exchange Online, SharePoint, OneDrive and Teams.
+- [Cyber Frame](https://techfortress.tech/cyberframe.dc): Hyper-converged infrastructure with built-in backup and disaster recovery.
+
+## Management & Remote Support
+- [Endpoint Management](https://techfortress.tech/endpointmanagement.dc): Patching, device control and monitoring from one console.
+- [Secure Remote Control](https://techfortress.tech/netsupportmanager.dc): Encrypted remote support across LAN, WAN and internet.
+- [IT Asset Management](https://techfortress.tech/netsupportdna.dc): Hardware and software inventory, licence management and metering.
+- [Mass Notification](https://techfortress.tech/netsupportnotify.dc): Urgent one-way desktop alerting across sites.
+- [Classroom Software](https://techfortress.tech/netsupportschool.dc): Classroom management for schools and training rooms.
+- [Classroom Management (classroom.cloud)](https://techfortress.tech/classroommanagement.dc): Cloud 3-in-1 teaching, online safety and school IT management.
+- [Secure Remote Connection](https://techfortress.tech/connect247.dc): Cloud remote access with Zero Trust Network Access and 2FA.
+
+## Support & Infrastructure
+- [IT Managed Services](https://techfortress.tech/support.dc): 24/7 helpdesk, monitoring, cloud solutions, MDR and IT consulting.
+- [IT Infrastructure & AMC](https://techfortress.tech/itinfrastructure.dc): Structured cabling, CCTV, audio-video, telephony, wireless and annual maintenance contracts.
+
+## Company
+- [About](https://techfortress.tech/about.dc)
+- [Customer Success as a Service](https://techfortress.tech/customersuccess.dc): Local customer success presence in the UAE and GCC for SaaS vendors.
+- [Become a Partner](https://techfortress.tech/becomeapartner.dc)
+- [Contact](https://techfortress.tech/contact.dc)
+
+## Articles
+- [Microsoft 365 doesn't back up your data the way you think it does](https://techfortress.tech/blog/microsoft-365-backup): It's the assumption we correct more than any other. Microsoft guarantees uptime, not your data.
+- [EDR, XDR, MDR and plain antivirus: what the acronyms actually mean](https://techfortress.tech/blog/edr-vs-xdr-vs-mdr): Four acronyms, sold by everyone, explained by almost nobody. Here's the version we give clients before they spend money.
+- [The phishing emails that get past Microsoft 365, and why](https://techfortress.tech/blog/phishing-past-microsoft-365): The dangerous emails are clean, well written, contain no attachment, and ask you to change a bank account.
+- [Your backup is useless if you've never tested a restore](https://techfortress.tech/blog/test-your-restore): Green ticks in a backup console tell you a job finished. They tell you nothing about whether the data is usable.
+- [What UAE businesses should know about personal data protection](https://techfortress.tech/blog/uae-pdpl-what-businesses-should-know): Most UAE businesses now handle personal data under a federal framework. Fewer have adjusted their systems to match.
+- [What IT security actually costs a UAE SME](https://techfortress.tech/blog/what-it-security-costs-uae-sme): Nobody publishes prices, so everyone assumes it's expensive. Here's what actually drives the number.
+- [The first 72 hours of a ransomware attack, hour by hour](https://techfortress.tech/blog/first-72-hours-ransomware): What actually happens when ransomware hits, what the first decisions are, and the mistakes that turn a bad week into a closure.
+- [How to choose a managed IT provider in the UAE](https://techfortress.tech/blog/choosing-an-msp-uae): Every provider says 24/7, proactive and enterprise-grade. Here's how to find out which ones mean it.
+- [Your staff are already pasting company data into AI tools](https://techfortress.tech/blog/shadow-ai-at-work): Shadow AI is the fastest-growing data leak channel in most businesses. Why blocking doesn't work, and what does.

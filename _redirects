@@ -1,0 +1,52 @@
+# Clean URLs -> page files
+/security  /security.dc  200
+/endpoint-security  /endpointsecurity.dc  200
+/edr  /edr.dc  200
+/xdr  /xdr.dc  200
+/mdr  /mdr.dc  200
+/managed-detection-response  /mdr.dc  200
+/email-security  /advancedemailsecurity.dc  200
+/ransomware-protection  /ransomwareprotection.dc  200
+/data-management  /datamanagement.dc  200
+/backup-recovery  /backuprecovery.dc  200
+/data-loss-prevention  /datalossprevention.dc  200
+/disaster-recovery  /disasterrecovery.dc  200
+/microsoft-365-backup  /m365backup.dc  200
+/genai-protection  /genaiprotection.dc  200
+/network-security  /networksecurity.dc  200
+/cyber-frame  /cyberframe.dc  200
+/security-awareness-training  /securityawarenesstraining.dc  200
+/management  /management.dc  200
+/endpoint-management  /endpointmanagement.dc  200
+/secure-remote-control  /netsupportmanager.dc  200
+/it-asset-management  /netsupportdna.dc  200
+/mass-notification  /netsupportnotify.dc  200
+/classroom-software  /netsupportschool.dc  200
+/classroom-management  /classroommanagement.dc  200
+/secure-remote-connection  /connect247.dc  200
+/support  /support.dc  200
+/it-managed-services  /support.dc  200
+/it-infrastructure  /itinfrastructure.dc  200
+/customer-success  /customersuccess.dc  200
+/csaas  /customersuccess.dc  200
+/about  /about.dc  200
+/contact  /contact.dc  200
+/partner  /becomeapartner.dc  200
+/blog  /blog.dc  200
+/terms  /termsconditions.dc  200
+/privacy  /privacypolicy.dc  200
+
+# Blog articles
+/blog/microsoft-365-backup  /BlogM365Backup.dc.html  200
+/blog/edr-vs-xdr-vs-mdr  /BlogEdrXdrMdr.dc.html  200
+/blog/phishing-past-microsoft-365  /BlogPhishing.dc.html  200
+/blog/test-your-restore  /BlogRestoreTest.dc.html  200
+/blog/uae-pdpl-what-businesses-should-know  /BlogPDPL.dc.html  200
+/blog/what-it-security-costs-uae-sme  /BlogSecurityBudget.dc.html  200
+
+/blog/first-72-hours-ransomware  /BlogRansomware72h.dc.html  200
+/blog/choosing-an-msp-uae  /BlogMSP.dc.html  200
+/blog/shadow-ai-at-work  /BlogShadowAI.dc.html  200
+
+# 404
+/*  /404.html  404

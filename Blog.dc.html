@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,31 @@
 <x-dc>
 <helmet>
 <meta charset="utf-8">
-<title>Blog — Tech Fortress</title>
+<title>Cybersecurity Insights & Blog | Tech Fortress</title>
+<!--SEO-->
+<meta name="geo.region" content="AE-DU">
+<meta name="geo.placename" content="Dubai, United Arab Emirates">
+<meta name="geo.position" content="25.1877;55.2734">
+<meta name="ICBM" content="25.1877, 55.2734">
+<meta name="description" content="Practical guidance on cybersecurity, managed IT and staying ahead of threats from the Tech Fortress team.">
+<meta name="keywords" content="cybersecurity blog, IT security insights, cybersecurity tips">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Tech Fortress">
+<link rel="canonical" href="https://techfortress.tech/blog">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tech Fortress">
+<meta property="og:title" content="Cybersecurity Insights & Blog | Tech Fortress">
+<meta property="og:description" content="Practical guidance on cybersecurity, managed IT and staying ahead of threats from the Tech Fortress team.">
+<meta property="og:url" content="https://techfortress.tech/blog">
+<meta property="og:image" content="https://techfortress.tech/assets/logo.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cybersecurity Insights & Blog | Tech Fortress">
+<meta name="twitter:description" content="Practical guidance on cybersecurity, managed IT and staying ahead of threats from the Tech Fortress team.">
+<meta name="twitter:image" content="https://techfortress.tech/assets/logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tech Fortress","url":"https://techfortress.tech","logo":"https://techfortress.tech/assets/logo.png","description":"Managed cybersecurity and IT services provider based in Dubai, serving businesses worldwide.","email":"info@techfortress.tech","telephone":"+971-4-852-3999","address":{"@type":"PostalAddress","streetAddress":"Office 1401, Boulevard Plaza Tower 1","addressLocality":"Dubai","addressCountry":"AE"},"sameAs":["https://www.linkedin.com/company/techfortress","https://www.facebook.com/TechFortress.tech","https://twitter.com/TechFortressme","https://instagram.com/techfortress.tech"]}</script>
+<!--/SEO-->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="./image-slot.js"></script>
@@ -36,15 +60,54 @@
   .flyout a:hover{background:oklch(0.95 0.01 250)}
   image-slot{min-width:0;max-width:100%}
   [style*="grid-template-columns"]>*{min-width:0}
-  @media(max-width:860px){
+  img,video,iframe,image-slot{max-width:100%}
+  table{max-width:100%}
+  /* Tablet */
+  @media(max-width:1080px){
+    [style*="grid-template-columns:repeat(5,1fr)"],
+    [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:repeat(2,1fr) !important}
+    [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:repeat(2,1fr) !important}
+    [style*="grid-template-columns:1.4fr 1fr 1fr 1.2fr"]{grid-template-columns:repeat(2,1fr) !important}
+  }
+  @media(max-width:900px){
+    [style*="grid-template-columns:1.1fr 0.9fr"],
+    [style*="grid-template-columns:0.9fr 1.1fr"],
+    [style*="grid-template-columns:1.15fr 0.85fr"],
+    [style*="grid-template-columns:0.85fr 1.15fr"],
+    [style*="grid-template-columns:1.2fr 0.8fr"],
+    [style*="grid-template-columns:1.3fr 0.7fr"],
+    [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important}
+    [style*="gap:56px"]{gap:32px !important}
+    [style*="gap:48px"]{gap:28px !important}
+  }
+  /* Phone */
+  @media(max-width:680px){
     [style*="grid-template-columns"]{grid-template-columns:1fr !important}
-    nav{gap:12px !important;justify-content:center}
-    [style*="max-width:1280px"]{padding-left:20px !important;padding-right:20px !important}
-    .dropdown,.dropdown-l1{position:static !important;width:auto !important;margin-top:8px !important}
-    .flyout{position:static !important;width:auto !important;margin-left:0 !important}
+    [style*="max-width:1280px"],[style*="max-width:1200px"],[style*="max-width:900px"],[style*="max-width:820px"],[style*="max-width:1000px"],[style*="max-width:860px"]{padding-left:18px !important;padding-right:18px !important}
+    section{padding-top:44px !important;padding-bottom:44px !important}
+    [style*="padding:56px"],[style*="padding:52px"],[style*="padding:48px"]{padding:28px !important}
+    [style*="padding:40px"],[style*="padding:36px"],[style*="padding:32px"]{padding:24px !important}
+    [style*="padding:32px 40px"],[style*="padding:36px 40px"]{padding:24px !important}
+    h1{font-size:30px !important;line-height:1.18 !important}
+    h2{font-size:23px !important;line-height:1.25 !important}
+    h3{font-size:20px !important}
+    [style*="font-size:19px"]{font-size:17px !important}
+    [style*="font-size:18px"]{font-size:16.5px !important}
+    [style*="font-size:17px"]{font-size:16px !important}
+    blockquote{font-size:16px !important;padding:16px 18px !important}
+    /* horizontal scroll for wide tables */
+    table{display:block;overflow-x:auto;white-space:nowrap}
+    /* stack CTA banners */
+    [style*="justify-content:space-between"]{justify-content:flex-start !important}
+    a[style*="white-space:nowrap"]{white-space:normal !important}
+  }
+  @media(max-width:420px){
+    h1{font-size:26px !important}
+    [style*="max-width:1280px"],[style*="max-width:1200px"]{padding-left:14px !important;padding-right:14px !important}
   }
 </style>
 <script src="./reveal.js"></script>
+<script src="./nav-mobile.js"></script>
 </helmet>
 
 <div style="position:sticky;top:0;z-index:50;background:oklch(0.16 0.02 250 / 0.9);backdrop-filter:blur(14px);border-bottom:1px solid oklch(0.28 0.02 25 / 0.6)">
@@ -119,20 +182,89 @@
 
 <section style="max-width:1280px;margin:0 auto;padding:20px 32px 90px">
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-    <a href="./Contact.dc.html" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
-      <image-slot id="blog-0" src="assets/ph-diagram.png" shape="rect" placeholder="Article image" style="width:100%;aspect-ratio:16/9"></image-slot>
-      <div style="padding:24px"><div style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:10px">Security</div><h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">Why behaviour-based EDR beats legacy antivirus</h3><span style="color:oklch(0.6 0.02 250);font-size:13px">Read article →</span></div>
+    <a href="/blog/first-72-hours-ransomware" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/ph-diagram.png" alt="The first 72 hours of a ransomware attack, hour by hour" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Incident Response</span><span style="color:oklch(0.5 0.02 250);font-size:12px">29 August 2026 · 7 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">The first 72 hours of a ransomware attack, hour by hour</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">What actually happens when ransomware hits, what the first decisions are, and the mistakes that turn a bad week into a closure.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
     </a>
-    <a href="./Contact.dc.html" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
-      <image-slot id="blog-1" src="assets/ph-product.png" shape="rect" placeholder="Article image" style="width:100%;aspect-ratio:16/9"></image-slot>
-      <div style="padding:24px"><div style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:10px">Email</div><h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">7 email threats your filter is probably missing</h3><span style="color:oklch(0.6 0.02 250);font-size:13px">Read article →</span></div>
+    <a href="/blog/choosing-an-msp-uae" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/support-hub.png" alt="How to choose a managed IT provider in the UAE" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Guidance</span><span style="color:oklch(0.5 0.02 250);font-size:12px">30 August 2026 · 6 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">How to choose a managed IT provider in the UAE</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">Every provider says 24/7, proactive and enterprise-grade. Here's how to find out which ones mean it.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
     </a>
-    <a href="./Contact.dc.html" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" style-hover="transform:translateY(-4px);border-color:oklch(0.55 0.22 25 / 0.6)">
-      <image-slot id="blog-2" src="assets/ph-server.png" shape="rect" placeholder="Article image" style="width:100%;aspect-ratio:16/9"></image-slot>
-      <div style="padding:24px"><div style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:10px">Data</div><h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">A practical backup strategy that survives ransomware</h3><span style="color:oklch(0.6 0.02 250);font-size:13px">Read article →</span></div>
+    <a href="/blog/shadow-ai-at-work" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/genai-dashboard.png" alt="Your staff are already pasting company data into AI tools" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">AI Security</span><span style="color:oklch(0.5 0.02 250);font-size:12px">31 August 2026 · 6 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">Your staff are already pasting company data into AI tools</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">Shadow AI is the fastest-growing data leak channel in most businesses. Why blocking doesn't work, and what does.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
+    </a>
+    <a href="/blog/microsoft-365-backup" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/ph-product.png" alt="Microsoft 365 doesn't back up your data the way you think it does" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Data Protection</span><span style="color:oklch(0.5 0.02 250);font-size:12px">14 July 2026 · 6 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">Microsoft 365 doesn't back up your data the way you think it does</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">It's the assumption we correct more than any other. Microsoft guarantees uptime, not your data.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
+    </a>
+    <a href="/blog/edr-vs-xdr-vs-mdr" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/edr-dashboard.png" alt="EDR, XDR, MDR and plain antivirus: what the acronyms actually mean" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Security</span><span style="color:oklch(0.5 0.02 250);font-size:12px">22 July 2026 · 7 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">EDR, XDR, MDR and plain antivirus: what the acronyms actually mean</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">Four acronyms, sold by everyone, explained by almost nobody. Here's the version we give clients before they spend money.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
+    </a>
+    <a href="/blog/phishing-past-microsoft-365" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/email-dashboard.png" alt="The phishing emails that get past Microsoft 365, and why" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Email Security</span><span style="color:oklch(0.5 0.02 250);font-size:12px">5 August 2026 · 6 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">The phishing emails that get past Microsoft 365, and why</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">The dangerous emails are clean, well written, contain no attachment, and ask you to change a bank account.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
+    </a>
+    <a href="/blog/test-your-restore" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/backup-dashboard.png" alt="Your backup is useless if you've never tested a restore" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Business Continuity</span><span style="color:oklch(0.5 0.02 250);font-size:12px">12 August 2026 · 5 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">Your backup is useless if you've never tested a restore</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">Green ticks in a backup console tell you a job finished. They tell you nothing about whether the data is usable.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
+    </a>
+    <a href="/blog/uae-pdpl-what-businesses-should-know" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/ph-diagram.png" alt="What UAE businesses should know about personal data protection" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Compliance</span><span style="color:oklch(0.5 0.02 250);font-size:12px">20 August 2026 · 6 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">What UAE businesses should know about personal data protection</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">Most UAE businesses now handle personal data under a federal framework. Fewer have adjusted their systems to match.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
+    </a>
+    <a href="/blog/what-it-security-costs-uae-sme" style="background:oklch(0.15 0.012 25);border:1px solid oklch(0.26 0.015 25);border-radius:14px;overflow:hidden;display:block;transition:transform .2s,border-color .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='oklch(0.55 0.22 25 / 0.6)'" onmouseout="this.style.transform='';this.style.borderColor='oklch(0.26 0.015 25)'">
+      <img src="assets/mdr-dashboard.png" alt="What IT security actually costs a UAE SME" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block" loading="lazy">
+      <div style="padding:24px">
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;flex-wrap:wrap"><span style="color:oklch(0.58 0.22 25);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Guidance</span><span style="color:oklch(0.5 0.02 250);font-size:12px">27 August 2026 · 6 min</span></div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;color:oklch(0.95 0.01 250);font-size:18px;line-height:1.35;margin:0 0 10px">What IT security actually costs a UAE SME</h3>
+        <p style="color:oklch(0.62 0.02 250);font-size:14px;line-height:1.6;margin:0 0 12px">Nobody publishes prices, so everyone assumes it's expensive. Here's what actually drives the number.</p>
+        <span style="color:oklch(0.58 0.22 25);font-size:13px;font-weight:600">Read article →</span>
+      </div>
     </a>
   </div>
-  <p style="text-align:center;color:oklch(0.55 0.02 250);font-size:15px;margin:48px 0 0">More articles coming soon.</p>
+  <p style="text-align:center;color:oklch(0.55 0.02 250);font-size:15px;margin:48px 0 0">New articles published regularly.</p>
 </section><footer style="background:oklch(0.08 0.008 25);border-top:1px solid oklch(0.24 0.015 25)">
   <div style="max-width:1280px;margin:0 auto;padding:64px 32px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px">
     <div>
